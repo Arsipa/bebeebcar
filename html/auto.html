@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bebeebcar.ru</title>
+    <script src="../js/popup.js"></script>
+    <script src='http://code.jquery.com/jquery-2.1.1.min.js'></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    
+</head>
+<main>
+    <header>
+        <a href="index.html"><img src="../img/logo.png" alt="#"></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="auto.html" class="active">Авто</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="galerey.html">Галерея</a></li>
+                <li><a href="about.html">О нас</a></li>
+            </ul>
+        </nav>
+        <ul class="contacts">
+            <li><a href="mailto:info@bbcar.ru">info@bbcar.ru</a></li>
+            <li><a href="tel: +79104257768">+79104257768</a></li>
+        </ul>
+    </header>
+    <h1>Авто</h1>
+    <section class="autos">
+        <article>
+            <section class="filters">
+                <p>Фильтры</p>
+                <section>
+                    <form action="#" method="post">
+                        <input type="serach" id="search" placeholder="Найти...">
+                        <button type="submit"></button>
+                    </form>
+                    <button class="filter-btn"><img src="../img/filter.svg" alt="#" class="filter-svg"></button>
+                </section>
+                <section class="selection">
+                    <select>
+                        <option selected disabled hidden>Марка</option>
+                        <option>Любая</option>
+                        <option>BMW</option>
+                        <option>Nissan</option>
+                    </select>
+                    <select>
+                        <option selected disabled hidden>Модель</option>
+                        <option>Любая</option>
+                        <option>BMW X2</option>
+                        <option>BMW X3</option>
+                    </select>
+                </section>
+                <section class="selection">
+                    <select>
+                        <option selected disabled hidden>Коробка</option>
+                        <option>Любая</option>
+                        <option>Автомат</option>
+                        <option>Механическая</option>
+                    </select>
+                    <select>
+                        <option selected disabled hidden>Кузов</option>
+                        <option>Любой</option>
+                        <option>Седан</option>
+                        <option>Внедорожник 5 дв.</option>
+                    </select>
+                </section>
+                <section class="selection">
+                    <select>
+                        <option selected disabled hidden>Двигатель</option>
+                        <option>Любой</option>
+                        <option>Бензин</option>
+                        <option>Дизель</option>
+                    </select>
+                    <select>
+                        <option selected disabled hidden>Привод</option>
+                        <option>Любой</option>
+                        <option>Полный</option>
+                        <option>Передний</option>
+                    </select>
+                </section>
+                <section class="selection">
+                    <select style="width: 50%; border-right: 1px solid #FD630D;border-radius: 5px 0px 0px 5px;">
+                        <option selected disabled hidden>Объём от</option>
+                        <option>0.1 л.</option>
+                        <option>0.5 л.</option>
+                        <option>1 л.</option>
+                    </select>
+                    <select style="width: 50%; border-left: 1px solid #FD630D;border-radius: 0px 5px 5px 0px;">
+                        <option selected disabled hidden>до</option>
+                        <option>2 л.</option>
+                        <option>3 л.</option>
+                        <option>6 л.</option>
+                    </select>
+                </section>
+                <section class="colors">
+                    <span>Цвет:</span>
+                    <button>
+                        <div class="color" style="background: #FF0000;"></div>
+                    </button>
+                    <button>
+                        <div class="color" style="background: #00FF00;"></div>
+                    </button>
+                    <button>
+                        <div class="color" style="background: #000000;"></div>
+                    </button>
+                    <button>
+                        <div class="color" style="background: #FFFF00;"></div>
+                    </button>
+                    <button>
+                        <div class="color" style="background: #0000FF;"></div>
+                    </button>
+                    <button>
+                        <div class="color" style="background: #FF8A00;"></div>
+                    </button>
+                    <button>
+                        <div class="color" style="background: #FFFFFF;"></div>
+                    </button>
+                    <button>
+                        <div class="color" style="background: #969696;"></div>
+                    </button>
+                    <button>
+                        <div class="color" style="background: #640000;"></div>
+                    </button>
+                </section>
+                <section class="selection">
+                    <select style="width: 50%; border-right: 1px solid #FD630D;border-radius: 5px 0px 0px 5px;">
+                        <option selected disabled hidden>Цена от</option>
+                        <option>1 000 000 р.</option>
+                        <option>1 500 000 р.</option>
+                        <option>2 000 000 р.</option>
+                    </select>
+                    <select style="width: 50%; border-left: 1px solid #FD630D;border-radius: 0px 5px 5px 0px;">
+                        <option selected disabled hidden>до</option>
+                        <option>4 000 000 р.</option>
+                        <option>7 000 000 р.</option>
+                        <option>10 000 000 р.</option>
+                    </select>
+                </section>
+                <div style="display: flex;justify-content: center;">
+                    <button class="accept-filter">Применить</button>
+                </div>
+            </section>
+            <section class="auto-card">
+                <img src="../img/image 304.png" alt="#">
+                <p class="auto-name">Lexus NX I Рестайлинг</p>
+                <p class="auto-description">
+                    <span>Мотор:</span> 2.0л / 150 л.с. бензин<br>
+                    <span>Коробка:</span> Автомат<br>
+                    <span>Привод:</span> Полный, передний<br>
+                    <span>Цвет:</span> Синий<br>
+                    <span>Кузов:</span> Внедорожник 5 дв.<br>
+                    <span>Комплектация:</span> Progressive
+                </p>
+                <p class="auto-price">2 850 000 ₽</p>
+                <div class="btn btn-auto"><a href="auto-self.html">Подробнее</a></div>
+            </section>
+            <section class="auto-card">
+                <img src="../img/image 301.png" alt="#">
+                <p class="auto-name">Lexus ES VII</p>
+                <p class="auto-description">
+                    <span>Мотор:</span> 3.5л / 249 л.с. бензин<br>
+                    <span>Коробка:</span> Автомат<br>
+                    <span>Привод:</span> Передний<br>
+                    <span>Цвет:</span> Чёрный<br>
+                    <span>Кузов:</span> Седан<br>
+                    <span>Комплектация:</span> F Sport
+                </p>
+                <p class="auto-price">4 605 000 ₽</p>
+                <div class="btn btn-auto"><a href="#">Подробнее</a></div>
+            </section>
+            <section class="auto-card">
+                <img src="../img/image 303.png" alt="#">
+                <p class="auto-name">Mitsubishi ASX I Рестайлинг 3</p>
+                <p class="auto-description">
+                    <span>Мотор:</span> 1.6л / 117 л.с. бензин<br>
+                    <span>Коробка:</span> Механическая<br>
+                    <span>Привод:</span> Полный<br>
+                    <span>Цвет:</span> Оранжевый<br>
+                    <span>Кузов:</span> Внедорожник 5 дв.<br>
+                    <span>Комплектация:</span> Invite
+                </p>
+                <p class="auto-price">1 460 000 ₽</p>
+                <div class="btn btn-auto"><a href="#">Подробнее</a></div>
+            </section>
+            <section class="auto-card">
+                <img src="../img/image 302.png" alt="#">
+                <p class="auto-name">Audi Q8 I</p>
+                <p class="auto-description">
+                    <span>Мотор:</span> 3.0л / 249 л.с. бензин<br>
+                    <span>Коробка:</span> Автомат<br>
+                    <span>Привод:</span> Полный<br>
+                    <span>Цвет:</span> Оранжевый<br>
+                    <span>Кузов:</span> Внедорожник 5 дв.<br>
+                    <span>Комплектация:</span> 45 TDI
+                </p>
+                <p class="auto-price">7 230 000 ₽</p>
+                <div class="btn btn-auto"><a href="#">Подробнее</a></div>
+            </section>
+            <section class="auto-card">
+                <img src="../img/image 304.png" alt="#">
+                <p class="auto-name">Lexus NX I Рестайлинг</p>
+                <p class="auto-description">
+                    <span>Мотор:</span> 2.0л / 150 л.с. бензин<br>
+                    <span>Коробка:</span> Автомат<br>
+                    <span>Привод:</span> Полный, передний<br>
+                    <span>Цвет:</span> Синий<br>
+                    <span>Кузов:</span> Внедорожник 5 дв.<br>
+                    <span>Комплектация:</span> Progressive
+                </p>
+                <p class="auto-price">2 850 000 ₽</p>
+                <div class="btn btn-auto"><a href="#">Подробнее</a></div>
+            </section>
+            <section class="auto-card">
+                <img src="../img/image 302.png" alt="#">
+                <p class="auto-name">Audi Q8 I</p>
+                <p class="auto-description">
+                    <span>Мотор:</span> 3.0л / 249 л.с. бензин<br>
+                    <span>Коробка:</span> Автомат<br>
+                    <span>Привод:</span> Полный<br>
+                    <span>Цвет:</span> Оранжевый<br>
+                    <span>Кузов:</span> Внедорожник 5 дв.<br>
+                    <span>Комплектация:</span> 45 TDI
+                </p>
+                <p class="auto-price">7 230 000 ₽</p>
+                <div class="btn btn-auto"><a href="#">Подробнее</a></div>
+            </section>
+            <section class="auto-card">
+                <img src="../img/image 301.png" alt="#">
+                <p class="auto-name">Lexus ES VII</p>
+                <p class="auto-description">
+                    <span>Мотор:</span> 3.5л / 249 л.с. бензин<br>
+                    <span>Коробка:</span> Автомат<br>
+                    <span>Привод:</span> Передний<br>
+                    <span>Цвет:</span> Чёрный<br>
+                    <span>Кузов:</span> Седан<br>
+                    <span>Комплектация:</span> F Sport
+                </p>
+                <p class="auto-price">4 605 000 ₽</p>
+                <div class="btn btn-auto"><a href="#">Подробнее</a></div>
+            </section>
+            <section class="auto-card">
+                <img src="../img/image 303.png" alt="#">
+                <p class="auto-name">Mitsubishi ASX I Рестайлинг 3</p>
+                <p class="auto-description">
+                    <span>Мотор:</span> 1.6л / 117 л.с. бензин<br>
+                    <span>Коробка:</span> Механическая<br>
+                    <span>Привод:</span> Полный<br>
+                    <span>Цвет:</span> Оранжевый<br>
+                    <span>Кузов:</span> Внедорожник 5 дв.<br>
+                    <span>Комплектация:</span> Invite
+                </p>
+                <p class="auto-price">1 460 000 ₽</p>
+                <div class="btn btn-auto"><a href="#">Подробнее</a></div>
+            </section>
+            <section class="auto-card">
+                <img src="../img/image 304.png" alt="#">
+                <p class="auto-name">Lexus NX I Рестайлинг</p>
+                <p class="auto-description">
+                    <span>Мотор:</span> 2.0л / 150 л.с. бензин<br>
+                    <span>Коробка:</span> Автомат<br>
+                    <span>Привод:</span> Полный, передний<br>
+                    <span>Цвет:</span> Синий<br>
+                    <span>Кузов:</span> Внедорожник 5 дв.<br>
+                    <span>Комплектация:</span> Progressive
+                </p>
+                <p class="auto-price">2 850 000 ₽</p>
+                <div class="btn btn-auto"><a href="#">Подробнее</a></div>
+            </section>
+            <section class="auto-card">
+                <img src="../img/image 303.png" alt="#">
+                <p class="auto-name">Mitsubishi ASX I Рестайлинг 3</p>
+                <p class="auto-description">
+                    <span>Мотор:</span> 1.6л / 117 л.с. бензин<br>
+                    <span>Коробка:</span> Механическая<br>
+                    <span>Привод:</span> Полный<br>
+                    <span>Цвет:</span> Оранжевый<br>
+                    <span>Кузов:</span> Внедорожник 5 дв.<br>
+                    <span>Комплектация:</span> Invite
+                </p>
+                <p class="auto-price">1 460 000 ₽</p>
+                <div class="btn btn-auto"><a href="#">Подробнее</a></div>
+            </section>
+            <section class="auto-card">
+                <img src="../img/image 301.png" alt="#">
+                <p class="auto-name">Lexus ES VII</p>
+                <p class="auto-description">
+                    <span>Мотор:</span> 3.5л / 249 л.с. бензин<br>
+                    <span>Коробка:</span> Автомат<br>
+                    <span>Привод:</span> Передний<br>
+                    <span>Цвет:</span> Чёрный<br>
+                    <span>Кузов:</span> Седан<br>
+                    <span>Комплектация:</span> F Sport
+                </p>
+                <p class="auto-price">4 605 000 ₽</p>
+                <div class="btn btn-auto"><a href="#">Подробнее</a></div>
+            </section>
+        </article>
+    </section>
+    <section class="pagination">
+        <ul>
+            <li><a href="#" class="pg-active"><img src="../img/arrow-l.png" alt="#"></a></li>
+            <li><a href="#" class="pg-active">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#" class="pg-active"><img src="../img/arrow-r.png" alt="#"></a></li>
+        </ul>
+    </section>
+</main>
+<footer>
+    <ul>
+        <li>
+            <ul>
+                <li class="footer-logo"><img src="../img/logo.png" alt="#"></li>
+                <li>
+                    <ul class="footer-contacts">
+                        <li><a href="tel: 89214840695">8-921-484-06-95 Пастушков</a></li>
+                        <li><a href="tel: 89263942611">8-926-394-26-11 Агафонов</a></li>
+                        <li><a href="tel: 89152376909">8-915-237-69-09 Абрамов</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="copyright">
+                        <li>2021 - 2023</li>
+                        <li>© Все права защищены</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <ul class="footer-adress">
+                <li class="adress">г. Москва, ул.<br>Нежинская, д. 7</li>
+                <li class="adress">Пн - Пт<br>8:00 - 17:00</li>
+                <li>
+                    <ul class="footer-socials">
+                        <li>Мы в соц. сетях:</li>
+                        <li>
+                            <ul class="socials">
+                                <li><a href="#"><i class="fa fa-vk"></i></a></li>
+                                <li><a href="#"><i class="fa fa-telegram"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="footer-map">
+            <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3A1f43241918fbc484b18ed45f3def84400434c881cae529bbd55393fe0235d4e4&amp;source=constructor"
+                width="811" height="443" frameborder="0"></iframe>
+        </li>
+    </ul>
+</footer>
+
